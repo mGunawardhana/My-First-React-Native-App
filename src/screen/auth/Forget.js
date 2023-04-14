@@ -19,27 +19,13 @@ const Forget = () => {
 
                     </View>
 
-                <View style={styles.formInput}>
-                    <TextInput style={styles.textInput} placeholder="Your Full Name" />
-                    </View>
-
                <View style={styles.formInput}>
                     <TextInput style={styles.textInput} placeholder="Your email address" />
                 </View>
 
                 <View style={styles.formInput}>
-                    <TextInput style={styles.textInput} placeholder="Password"
-                        secureTextEntry={true}/>
-                </View>
-
-                <View style={styles.formInput}>
-                    <TextInput style={styles.textInput} placeholder="Confirm Password"
-                        secureTextEntry={true}/>
-                </View>
-
-                <View style={styles.formInput}>
                     <TouchableOpacity style={styles.defBtn}>
-                        <Text style={{textAlign:"center",fontSize:16,color:'#fff'}}>Register</Text>
+                        <Text style={{textAlign:"center",fontSize:16,color:'#fff'}}>Send Reset Link</Text>
                     </TouchableOpacity>
                 </View>
 
