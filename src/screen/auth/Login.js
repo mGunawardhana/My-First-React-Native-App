@@ -49,6 +49,10 @@ const Login = () => {
                      </View>
                 </View>
 
+                <View style={styles.formInput}>
+                   <View style={{height:1,backgroundColor:'#bbb',width:'100%'}}></View>
+                </View>
+
             </ScrollView>
         </SafeAreaView>
     )
