@@ -1,8 +1,23 @@
-import React from "react";
+import { useNavigation } from "@react-navigation/core";
+import React, { useEffect,useState } from "react";
 import { Image, Text, View } from "react-native";
 
 
 const Splash = () => {
+
+    const [isGo, setIsGo] = useState(true);
+
+    const Navigation = useNavigation();
+
+    useEffect(() => {
+        if (isGo == true) {
+            setTimeout(() => {
+                Navigation.navigate("Login");
+                setIsGo(false);
+            },2500);
+        }
+    });
+
     return (<View style={{
         flex: 1, justifyContent: 'center',
     alignItems:'center',backgroundColor:'#fff'}}>
