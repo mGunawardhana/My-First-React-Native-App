@@ -1,7 +1,11 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Image, ImageBackground, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 const Register = () => {
+
+    const navigation = useNavigation();
+
     return (
         /* scrollable wenna one nisa safeAreaView ganne*/
         <SafeAreaView>
@@ -49,7 +53,7 @@ const Register = () => {
                 </View>
 
                 <View style={styles.formInput}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>(navigation.navigate("Login"))} >
                         <Text style={{ color: '#2980b9', textAlign: 'center', fontSize: 16, fontWeight: 'bold' }}>
                             Already Have Account ? Login
                         </Text>

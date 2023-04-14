@@ -1,7 +1,11 @@
+import { useNavigation } from "@react-navigation/native";
 import React,{Component} from "react";
 import { Image, ImageBackground, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 const Forget = () => {
+
+    const navigation = useNavigation();
+
     return (
         /* scrollable wenna one nisa safeAreaView ganne*/
         <SafeAreaView>
@@ -35,7 +39,7 @@ const Forget = () => {
                 </View>
 
                 <View style={styles.formInput}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>(navigation.navigate("Login"))}>
                         <Text style={{ color: '#2980b9', textAlign: 'center', fontSize: 16, fontWeight: 'bold' }}>
                             Already Have Account ? Login
                         </Text>

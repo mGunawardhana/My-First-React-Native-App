@@ -14,10 +14,10 @@ const AppRouter = () => {
         //what is the route you want initialize name into initialRouteName var
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Splash">
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Login" component={Login} />
-                <Stack.Screen name="Register" component={Register} />
-                <Stack.Screen name="Forget" component={Forget} />
+                <Stack.Screen options={{headerShown:false}} name="Home" component={Home} />
+                <Stack.Screen options={{headerShown:false}} name="Login" component={Login} />
+                <Stack.Screen options={{headerShown:false}} name="Register" component={Register} />
+                <Stack.Screen options={{headerShown:false}} name="Forget" component={Forget} />
                 <Stack.Screen options={{headerShown:false}} name="Splash" component={Splash} />
       </Stack.Navigator>
     </NavigationContainer>
