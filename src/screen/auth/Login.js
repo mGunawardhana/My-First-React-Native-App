@@ -35,6 +35,10 @@ const Login = () => {
                 </View>
 
                 <View style={styles.formInput}>
+                    <Text style={{textAlign:'center'}}>or</Text>
+                </View>
+
+                <View style={styles.formInput}>
                     <View style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
                         <TouchableOpacity style={{marginRight:15}}>
                             <Image source={require("../../assets/images/myimage.jpg")} style={{width:40,height:40,borderRadius:1000}} />
