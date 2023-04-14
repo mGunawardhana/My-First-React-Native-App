@@ -11,11 +11,11 @@ const Login = () => {
                     <ImageBackground style={styles.defaultBg} resizeMode={'cover'} source={require('../../assets/images/head_image.jpg')} />
                 </View>
 
-                <View style={{ padding: 12,backgroundColor:'#fff' }}>
+                <View style={{ padding: 12,backgroundColor:'#fff'}}>
 
-                    <View style={{ justifyContent: 'center', alignItems:'center'}}>
+                    <View style={{ justifyContent: 'center', alignItems:'center',paddingTop:20,paddingBottom:20}}>
 
-                        <Image source={require('../../assets/images/logo.png')} style={{ width:150,height:150}} resizeMode={'contain'} />
+                        <Image source={require('../../assets/images/logo.png')} style={{ width:120,height:120}} resizeMode={'contain'} />
 
                     </View>
 

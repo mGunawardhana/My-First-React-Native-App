@@ -12,7 +12,7 @@ const Home = () => {
                 </View>
 
                  <View style={{justifyContent: 'center',alignItems:'center'}}>
-                    <Image source={require('../assets/images/logo.png')} resizeMode='contain' style={{width:'100%'}}/>
+                    <Image source={require('../assets/images/logo.png')} resizeMode='contain' style={{width:150,height:150}}/>
                 </View>
 
                 <View style={styles.container}>
@@ -35,16 +35,17 @@ const styles = StyleSheet.create({
     },
     myTitle: {
         fontSize: 65,
-        fontWeight: 'bold',
+        fontWeight: '900',
         textAlign: 'center',
         fontFamily:'cursive',
         paddingTop: 15,
         paddingBottom: 15,
         color:'#20bf6b'
+    // color:'#B53471'
     },
     shop: {
         fontSize: 30,
-        fontWeight: 'bold',
+        fontWeight: '700',
         textAlign: 'center',
         paddingBottom: 10,
         color:'#778ca3'
@@ -54,7 +55,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontFamily:'rounded',
         textAlign: 'center',
-        paddingTop: 40,
+        paddingTop: 50,
+        paddingBottom:40,
 
         color:'#778ca3'
     }
