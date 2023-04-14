@@ -4,17 +4,24 @@ import { Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-n
 const Home = () => {
     return (
         /* we can use inline styles like this */
-        <SafeAreaView style={{flex:1}}>
-            <ScrollView>
+        <SafeAreaView style={{flex:1,backgroundColor:'#fff'}}>
+            <ScrollView style={{paddingTop:100}}>
+
                 <View style={styles.container}>
-                    <Text style={styles.myTitle}>Welcome To The Food Corner</Text>
+                    <Text style={styles.Sample}>Welcome to the</Text>
                 </View>
-                <View style={{justifyContent: 'center',alignItems:'center'}}>
-                    <Image source={require('../assets/images/images-removebg-preview.png')} resizeMode='contain' style={{width:'100%'}}/>
+
+                 <View style={{justifyContent: 'center',alignItems:'center'}}>
+                    <Image source={require('../assets/images/logo.png')} resizeMode='contain' style={{width:'100%'}}/>
                 </View>
-                 <View style={styles.container}>
-                    <Text style={styles.Sample}>mGunawardhana's Cafe</Text>
+
+                <View style={styles.container}>
+                    <Text style={styles.myTitle}>Athena Fruit</Text>
                 </View>
+                <View style={styles.container}>
+                    <Text style={styles.shop}>Shop</Text>
+                </View>
+
             </ScrollView>
         </SafeAreaView>
     )
@@ -27,19 +34,29 @@ const styles = StyleSheet.create({
         // minHeight:400
     },
     myTitle: {
-        fontSize: 24,
+        fontSize: 65,
         fontWeight: 'bold',
         textAlign: 'center',
-        paddingTop: 20,
-        paddingBottom:20
+        fontFamily:'cursive',
+        paddingTop: 15,
+        paddingBottom: 15,
+        color:'#20bf6b'
+    },
+    shop: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        paddingBottom: 10,
+        color:'#778ca3'
     },
     Sample: {
-        fontSize: 18,
+        fontSize: 25,
         fontWeight: 'bold',
+        fontFamily:'rounded',
         textAlign: 'center',
-        paddingTop: 20,
-        paddingBottom: 20,
-        color:'red'
+        paddingTop: 40,
+
+        color:'#778ca3'
     }
 
 });

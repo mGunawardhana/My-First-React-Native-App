@@ -11,7 +11,7 @@ const Login = () => {
                     <ImageBackground style={styles.defaultBg} resizeMode={'cover'} source={require('../../assets/images/head_image.jpg')} />
                 </View>
 
-                <View style={{ padding: 12 }}>
+                <View style={{ padding: 12,backgroundColor:'#fff' }}>
 
                     <View style={{ justifyContent: 'center', alignItems:'center'}}>
 
