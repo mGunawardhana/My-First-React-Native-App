@@ -1,9 +1,11 @@
 import React from 'react';
-import Home from './src/screen/Home';
+import Login from './src/screen/auth/Login';
+
 
 const App = () => {
   return (
-     <Home/>
+<Login/>
+     
   );
 }
 
