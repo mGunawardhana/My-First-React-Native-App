@@ -11,6 +11,14 @@ const Login = () => {
                     <ImageBackground style={styles.defaultBg} resizeMode={'cover'} source={require('../../assets/images/head_image.jpg')} />
                 </View>
 
+                <View style={{ padding: 12 }}>
+
+                    <View style={{ justifyContent: 'center', alignItems:'center'}}>
+
+                        <Image source={require('../../assets/images/logo.png')} style={{ width:150,height:150}} resizeMode={'contain'} />
+
+                    </View>
+
                 <View style={styles.formInput}>
                     <TextInput style={styles.textInput} placeholder="Your email address" />
                 </View>
@@ -53,6 +61,16 @@ const Login = () => {
                    <View style={{height:1,backgroundColor:'#bbb',width:'100%'}}></View>
                 </View>
 
+                <View style={styles.formInput}>
+                    <TouchableOpacity>
+                        <Text style={{ color: '#27ae60', textAlign: 'center', fontSize: 16, fontWeight: 'bold' }}>
+                            Need Account ? Register Now
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+                </View>
+
+
             </ScrollView>
         </SafeAreaView>
     )
@@ -64,7 +82,7 @@ const styles = StyleSheet.create({
     },
     defaultBg: {
         width: '100%',
-        height: 160,
+        height: 130,
     }, formInput: {
         marginTop: 10,
         padding: 10,
@@ -79,5 +97,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
     }
 })
+
+//21.11
 
 export default Login;
