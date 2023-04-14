@@ -30,8 +30,8 @@ const Login = () => {
 
                 <View style={styles.formInput}>
                     <TouchableOpacity>
-                        <Text style={{ color: '#ff4757', textAlign: 'right', fontSize: 16, fontWeight: 'bold' }}>
-                            Forget Password
+                        <Text style={{ color: '#ff4757', textAlign: 'right', fontSize: 16, fontWeight: 'bold',textAlign:'center' }}>
+                            Forget Password ?
                         </Text>
                     </TouchableOpacity>
                 </View>
